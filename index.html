@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios del DOM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+      integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/CSS/main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Título del DOM</h1>
+    </header>
+    <button class="panel-btn hamburger hamburger--collapse" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <button class="arrowButton">&#11014;</button>
+    <button class="dark-mode">&#127769;</button>
+    <button class="light-mode is-active">&#9728;&#65039;</button>
+    <aside class="panel">
+      <nav class="menu">
+        <a data-scroll-spy href="#seccion1">Reloj y Alarma</a>
+        <a data-scroll-spy href="#seccion2">Eventos del Teclado</a>
+        <a data-scroll-spy href="#seccion3">Countdown</a>
+        <a data-scroll-spy href="#seccion4">Responsive con JS</a>
+        <a data-scroll-spy href="#seccion5">Responsive Tester</a>
+        <a data-scroll-spy href="#seccion6">Detección de Dispositivos</a>
+        <a data-scroll-spy href="#seccion7">Detección de Conexión</a>
+        <a data-scroll-spy href="#seccion8">Detección de Cámara</a>
+        <a data-scroll-spy href="#seccion9">Geolocalización</a>
+        <a data-scroll-spy href="#seccion10">Filtros de Búsqueda</a>
+        <a data-scroll-spy href="#seccion11">Sorteo Digital</a>
+        <a data-scroll-spy href="#seccion12">Responsive Slider</a>
+        <a data-scroll-spy href="#seccion13">Video</a>
+        <a data-scroll-spy href="#seccion14">Formulario</a>
+      </nav>
+    </aside>
+    <main>
+      <section id="seccion1" class="section" data-scroll-spy>
+        <h2>Reloj Digital y Alarma Sonora</h2>
+        <div class="reloj"></div>
+        <div>
+          <button id="activar-reloj">Iniciar Reloj</button>
+          <button id="desactivar-reloj">Detener Reloj</button>
+          <button id="activar-alarma">Iniciar Alarma</button>
+          <button id="desactivar-alarma">Detener Alarma</button>
+        </div>
+      </section>
+      <section id="seccion2" class="section" data-scroll-spy>
+        <h2>Eventos del Teclado</h2>
+        <div class="cuadrado">
+          <div class="circulo"></div>
+        </div>
+      </section>
+      <section id="seccion3" class="section" data-scroll-spy>
+        <h2>Countdown</h2>
+        <div class="countdown"></div>
+      </section>
+      <section id="seccion4" class="section" data-scroll-spy>
+        <h2>Responsive con JS</h2>
+        <div class="responsive-container"></div>
+      </section>
+      <section id="seccion5" class="section" data-scroll-spy>
+        <h2>Responsive Tester</h2>
+        <form class="form-tester" id="form">
+          <input
+            id="url"
+            nam="url"
+            type="text"
+            placeholder="example.com"
+            pattern="https?://.*"
+            title="Por favor ingresa una URL válida (http:// o https://)"
+          />
+          <input id="height" type="text" placeholder="Height" />
+          <input id="width" type="text" placeholder="Width" />
+          <div>
+            <input id="try" type="submit" value="Probar" />
+            <input id="close" type="button" value="Cerrar" />
+          </div>
+        </form>
+      </section>
+      <section id="seccion6" class="section" data-scroll-spy>
+        <h2>Detección de Dispositivos <br />(User Agent)</h2>
+        <div id="user-device"></div>
+      </section>
+      <section id="seccion7" class="section" data-scroll-spy>
+        <h2>Detección de Conexión</h2>
+      </section>
+      <section id="seccion8" class="section" data-scroll-spy>
+        <h2>Detección de Cámara</h2>
+        <video id="webcam"></video>
+      </section>
+      <section id="seccion9" class="section" data-scroll-spy>
+        <h2>Geolocalización</h2>
+        <div id="geo"></div>
+        <a href="" id="maps" target="_blank">Ver en Google Maps</a>
+      </section>
+      <section id="seccion10" class="section" data-scroll-spy>
+        <h2>Filtros de Búsqueda</h2>
+        <input id="searchInput" type="text" placeholder="Buscar por raza" />
+        <section class="cards">
+          <figure class="card">
+            <img
+              src="https://hellobark.com/wp-content/uploads/cedric-chihuahua-7.jpg"
+              alt="Chihuahua"
+            />
+            <figcaption>Chihuahua</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://images.hola.com/imagenes/mascotas/20201005176621/perro-husky-raza-perro-lobo/0-874-229/husky-m.jpg?tx=w_680"
+              alt="Husky"
+            />
+            <figcaption>Husky</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://img.freepik.com/fotos-premium/retrato-pequeno-perro-galgo-italiano-consumir-sombrero_58460-1231.jpg?w=360"
+              alt="Galgo"
+            />
+            <figcaption>Galgo</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://alimentoparaperritos.com/download/multimedia.normal.85a8674be22173cc.53616c63686963686120417274c3ad63756c6f5f6e6f726d616c2e77656270.webp"
+              alt="Salchicha"
+            />
+            <figcaption>Salchicha</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://www.tiendanimal.es/articulos/wp-content/uploads/2022/02/mastin-napolitano-marron.jpg"
+              alt="Mastin"
+            />
+            <figcaption>Mastin</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://www.elmueble.com/medio/2023/02/23/perro-de-raza-border-collie_fb1eb794_7210638_230223005102_1000x667.jpg"
+              alt="Collie"
+            />
+            <figcaption>Collie</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://misanimales.com/wp-content/uploads/2020/12/golden-retriever-tumbado.jpg"
+              alt="Golden"
+            />
+            <figcaption>Golden</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://www.pdsa.org.uk/media/7888/dalmatian-gallery-outdoors-8-min.jpg?anchor=center&mode=crop&quality=100&height=500&bgcolor=fff&rnd=132179483010000000"
+              alt="Dalmata"
+            />
+            <figcaption>Dalmata</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Spaniel%20%28Cocker%291.jpg?h=ccdd1b23&itok=rtpOkLHY"
+              alt="Cocker"
+            />
+            <figcaption>Cocker</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://nfnatcane.es/blog/wp-content/uploads/2022/03/American-Pitbull-Terrier.jpg"
+              alt="Pitbull"
+            />
+            <figcaption>Pitbull</figcaption>
+          </figure>
+        </section>
+      </section>
+      <section id="seccion11" class="section" data-scroll-spy>
+        <h2>Sorteo Digital</h2>
+        <ul id="sorteo-container">
+          <li>Rojo</li>
+          <li>Naranja</li>
+          <li>Amarillo</li>
+          <li>Lima</li>
+          <li>Verde</li>
+          <li>Celeste</li>
+          <li>Azul</li>
+          <li>Violeta</li>
+          <li>Lila</li>
+          <li>Fucsia</li>
+        </ul>
+        <button id="sorteo-btn">Obtener Ganador</button>
+      </section>
+      <section id="seccion12" class="section" data-scroll-spy>
+        <h2>Sorteo Digital</h2>
+        <ul id="sorteo-container">
+          <li>Rojo</li>
+          <li>Naranja</li>
+          <li>Amarillo</li>
+          <li>Lima</li>
+          <li>Verde</li>
+          <li>Celeste</li>
+          <li>Azul</li>
+          <li>Violeta</li>
+          <li>Lila</li>
+          <li>Fucsia</li>
+        </ul>
+        <button id="sorteo-btn">Obtener Ganador</button>
+      </section>
+      <section id="seccion13" class="section" data-scroll-spy>
+        <h2>Video</h2>
+        <!-- <video id="video" src="assets/mp4" loop></video> -->
+      </section>
+      <section id="seccion14" class="section" data-scroll-spy>
+        <h2>Formulario</h2>
+        <form
+          target="_blank "
+          action="https://formsubmit.co/mart.wo.m.is.art@gmail.com"
+          class="contact-form"
+          method="POST"
+        >
+          <legend>Envíanos tu comentario</legend>
+
+          <input
+            type="text"
+            pattern="[a-zA-ZáÁéÉíÍóÓúÚüÜÑñ\s]+$"
+            name="name"
+            title="Sólo acepta letras y espacios en blanco"
+            placeholder="Escribe tu nombre"
+            required
+          />
+          <input type="email"
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$""
+          name="email" title="Sólo acepta emails" placeholder="Escribe tu email"
+          required />
+          <input
+            type="text"
+            name="subject "
+            title="El asunto es requerido"
+            placeholder="Asunto a tratar"
+            required
+          />
+          <textarea
+            type="text"
+            name="comments"
+            cols="50"
+            rows="5"
+            placeholder="Escribe tus comentarios"
+            title="Tu comentario no debe exceder los 250 caracteres"
+            data-pattern="^.{1,250}$"
+            required
+          ></textarea>
+          <input type="submit" value="Enviar" />
+          <div class="contact-form-loader none">
+            <img id="loadingSVG" src="assets/grid.svg" alt="Cargando" />
+          </div>
+          <div class="contact-form-response none">
+            <p>Los datos han sido enviados</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="/JS/index.js" type="module"></script>
+  </body>
+</html>
