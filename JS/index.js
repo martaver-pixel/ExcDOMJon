@@ -16,6 +16,7 @@ import slider from "./slider.js";
 import scrollSpy from "./scroll_listener.js";
 import videoPlayer from "./video.js";
 import contactFromValidations from "./validaciones_form.js";
+import speechReader from "./narrador.js";
 
 const d = document;
 
@@ -24,7 +25,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   digitalClock(".reloj", "#activar-reloj", "#desactivar-reloj");
   alarm("assets/gatito.mp3", "#activar-alarma", "#desactivar-alarma");
   focusingCircle(".circle");
-  countdown(".countdown", "ESTAMOS JUNTOSSSS");
+  countdown(".countdown", "TENES TRABAJO?");
   arrowBtn(".arrowButton");
   responsiveSection(".responsive-container");
   responsiveTester("form", "close");
@@ -41,3 +42,4 @@ d.addEventListener("DOMContentLoaded", (e) => {
 });
 
 changeMode(".dark-mode", ".light-mode", "body");
+speechReader();

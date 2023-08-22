@@ -42,6 +42,7 @@
         <a data-scroll-spy href="#seccion12">Responsive Slider</a>
         <a data-scroll-spy href="#seccion13">Video</a>
         <a data-scroll-spy href="#seccion14">Formulario</a>
+        <a data-scroll-spy href="#seccion15">Narrador</a>
       </nav>
     </aside>
     <main>
@@ -197,20 +198,7 @@
         <button id="sorteo-btn">Obtener Ganador</button>
       </section>
       <section id="seccion12" class="section" data-scroll-spy>
-        <h2>Sorteo Digital</h2>
-        <ul id="sorteo-container">
-          <li>Rojo</li>
-          <li>Naranja</li>
-          <li>Amarillo</li>
-          <li>Lima</li>
-          <li>Verde</li>
-          <li>Celeste</li>
-          <li>Azul</li>
-          <li>Violeta</li>
-          <li>Lila</li>
-          <li>Fucsia</li>
-        </ul>
-        <button id="sorteo-btn">Obtener Ganador</button>
+        <h2>Responsive Slider</h2>
       </section>
       <section id="seccion13" class="section" data-scroll-spy>
         <h2>Video</h2>
@@ -263,6 +251,22 @@
             <p>Los datos han sido enviados</p>
           </div>
         </form>
+      </section>
+      <section id="seccion15" class="section" data-scroll-spy>
+        <h2>Narrador</h2>
+        <select id="speech-select">
+          <option value="">---Elige una Voz---</option>
+        </select>
+        <br /><br />
+        <textarea
+          name="text"
+          id="speech-text"
+          cols="50"
+          rows="5"
+          placeholder="Ingresa texto para leerlo.."
+        ></textarea>
+        <br /><br />
+        <button id="speech-btn">Leer Texto</button>
       </section>
     </main>
     <script src="./JS/index.js" type="module"></script>
