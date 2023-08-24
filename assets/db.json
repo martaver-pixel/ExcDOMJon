@@ -6,11 +6,6 @@
       "constelacion": "Pegaso"
     },
     {
-      "id": 2,
-      "nombre": "Shiryu",
-      "constelacion": "Dragón"
-    },
-    {
       "id": 3,
       "nombre": "Hyoga",
       "constelacion": "Cisne"
@@ -37,7 +32,7 @@
     },
     {
       "nombre": "Mart",
-      "constelacion": "Mart",
+      "constelacion": "Libra",
       "id": 23
     }
   ],
