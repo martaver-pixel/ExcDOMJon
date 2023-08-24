@@ -1,10 +1,12 @@
+import axios from "axios";
+
 //XMLHTTPRequest
 (() => {
   const xhr = new XMLHttpRequest(),
     $xhr = document.getElementById("xhr"),
     $fragment = document.createDocumentFragment();
 
-  xhr.addEventListener("readystatechange", (e) => {
+  xhr.addEventListener("readystatechange", () => {
     if (xhr.readyState !== 4) return;
 
     if (xhr.status >= 200 && xhr.status < 300) {
@@ -46,7 +48,7 @@
 
     .catch((err) => {
       let message = err.statusText || "Ocurrió un error";
-      $fetch.innerHTML = `Error ${xhr.status}: ${message}`;
+      $fetch.innerHTML = `Error ${err.status}: ${message}`;
     });
 })();
 //fetch async

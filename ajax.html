@@ -22,7 +22,14 @@
     <h2>Axios + Async-Await</h2>
     <ol id="axios-async"></ol>
     <br /><br /><br /><br /><br />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./JS/ajax.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script type="importmap">
+      {
+        "imports": {
+          "axios": "./node_modules/axios/dist/esm/axios.min.js"
+        }
+      }
+    </script>
+    <script src="./JS/ajax.js" type="module"></script>
   </body>
 </html>
