@@ -28,7 +28,7 @@ export function changeMode(moonBtn, sunBtn, body) {
       console.log(ls.getItem("darkmode"));
     }
   });
-  window.addEventListener("load", (e) => {
+  window.addEventListener("load", () => {
     if (ls.getItem("darkmode") === null) {
       ls.setItem("darkmode", "false");
     }
